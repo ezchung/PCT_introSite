@@ -222,6 +222,10 @@ main {
     margin-bottom: 10px;
 }
 
+.contact-header h1.title-line {
+    color: #fff
+}
+
 .contact-header p {
     font-size: 16px;
     color: #5a5a5a;
