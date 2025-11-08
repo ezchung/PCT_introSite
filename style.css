@@ -16,6 +16,72 @@ body {
     min-height: 100vh;
 }
 
+/* Loading Screen */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #b8b8b8;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loading-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loading-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.loading-bar-container {
+    width: 40px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.loading-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #d4a127;
+    transition: height 0.1s ease-out;
+}
+
+.loading-text {
+    max-width: 500px;
+}
+
+.loading-message {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.loading-percentage {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+#loadingPercent {
+    font-weight: 600;
+}
+
 /* Navigation Sidebar */
 nav {
     width: 160px;
