@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pine Clothing Tech</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+      <!-- Navigation -->
+      <nav>
+          <ul>
+              <li><a href="#video" class="nav-link active" data-page="video">Video</a></li>
+              <li><a href="#info" class="nav-link" data-page="info">Info</a></li>
+              <li><a href="#brands" class="nav-link" data-page="brands">Brands</a></li>
+              <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+          </ul>
+      </nav>
+
+      <!-- Gold Progress Bar -->
+      <div class="progress-bar">
+          <div class="progress-indicator"></div>
+      </div>
+
+      <!-- Main Content -->
+      <main>
+          <!-- Video Page -->
+          <div id="video" class="page active">
+              <div class="video-container">
+                  <div class="video-wrapper">
+                      <video id="mainVideo" src="" poster="">
+                          Your browser does not support the video tag.
+                      </video>
+                  </div>
+                  <div class="video-controls">
+                      <button id="playBtn">play</button>
+                      <button id="stopBtn">stop</button>
+                      <button id="muteBtn">mute</button>
+                      <span class="video-time" id="videoTime">00:00 / 00:00</span>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Info Page -->
+          <div id="info" class="page">
+              <div class="info-content">
+                  <div class="info-section">
+                      <h2>what do we do?</h2>
+                      <p>health tracking clothes</p>
+                  </div>
+
+                  <div class="info-section">
+                      <h2>where do we stand?</h2>
+                      <p>working prototype.</p>
+                  </div>
+
+                  <div class="info-section team">
+                      <h2>who are we?</h2>
+                      <p class="team-list">
+                          <span class="team-member">etienne</span> (founder, non-technical),
+                          <span class="team-member">evan</span> (hardware, ip),
+                          <span class="team-member">praveen</span> (hardware, electronics)<br>
+                          <span class="team-member">ezra</span> (software)
+                      </p>
+                  </div>
+
+                  <div class="info-section">
+                      <h2>why clothes?</h2>
+                      <p>it can measure more data than wrist-devices and is ubiquitous in everyday life.<br>
+                      it's the perfect platform for health monitoring.</p>
+                  </div>
+
+                  <div class="info-section">
+                      <h2>why now?</h2>
+                      <p>health monitoring is booming and can be much better than it is now.<br>
+                      technology is ready to deliver this evolution.</p>
+                  </div>
+
+                  <div class="info-section">
+                      <h2>future</h2>
+                      <p>every clothing piece is health tracking.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Brands Page -->
+          <div id="brands" class="page">
+              <div class="brands-content">
+                  <h1>Brands</h1>
+                  <p>Partner brands and collaborations coming soon.</p>
+                  <div class="brands-grid">
+                      <!-- Add brand logos/content here -->
+                  </div>
+              </div>
+          </div>
+
+          <!-- Contact Page -->
+          <div id="contact" class="page">
+              <div class="contact-content">
+                  <h1>Contact</h1>
+                  <form class="contact-form">
+                      <input type="text" placeholder="Name" required>
+                      <input type="email" placeholder="Email" required>
+                      <textarea rows="6" placeholder="Message" required></textarea>
+                      <button type="submit">Send</button>
+                  </form>
+              </div>
+          </div>
+      </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
